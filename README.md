@@ -1,5 +1,9 @@
 # workflow-skill
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
+[![Supported Agents](https://img.shields.io/badge/Agents-Antigravity%20%7C%20Claude%20%7C%20Cursor-555.svg)](#usage)
+
 A shared repository of modular skills, rules, and workflows for AI coding assistants (such as Antigravity, Claude Code, and Cursor).
 
 ## Overview
@@ -17,7 +21,8 @@ workflow-skill/
 ├── rules/                   # Project and environment rules
 │   ├── code-style/          # Formatting and language-specific standards
 │   ├── safety-and-git/      # Version control policies and conventions
-│   └── architecture/        # Design and testing patterns
+│   ├── architecture/        # Design and testing patterns
+│   └── ui/                  # Interface design standards and constraints
 ├── skills/                  # Modular agent skills
 │   ├── claude/              # Claude Code specific configurations
 │   ├── gemini/              # Gemini and Antigravity skills
@@ -68,6 +73,7 @@ git submodule add https://github.com/JohnLloydCanoy/workflow-skill.git .agent/hu
 ### Rules (`rules/`)
 | Rule | Scope | Description |
 | :--- | :--- | :--- |
+| [`anti-ai-slop`](rules/ui/1.%20anti-ai-slop.md) | UI / Design | Guidelines against gradient spam, faux SaaS clichés, and decorative filler |
 | `git-conventions` | Git | Commit message formats and branching rules |
 | `clean-code-principles` | Code Quality | Architecture boundaries and documentation standards |
 
