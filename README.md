@@ -1,4 +1,4 @@
-# workflow-skill
+# brogrammer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
@@ -16,7 +16,7 @@ This repository centralizes reusable components for AI-assisted development:
 ## Repository Structure
 
 ```text
-workflow-skill/
+brogrammer/
 ├── .agent/                  # Workspace configurations
 ├── rules/                   # Project and environment rules
 │   ├── code-style/          # Formatting and language-specific standards
@@ -58,7 +58,7 @@ cp rules/safety-and-git/git-conventions.md /path/to/project/.cursorrules
 ### 2. Git Submodule
 To track this repository inside an existing project:
 ```bash
-git submodule add https://github.com/JohnLloydCanoy/workflow-skill.git .agent/hub
+git submodule add https://github.com/JohnLloydCanoy/brogrammer.git .agent/hub
 ```
 
 ## Catalog
@@ -73,7 +73,8 @@ git submodule add https://github.com/JohnLloydCanoy/workflow-skill.git .agent/hu
 ### Rules (`rules/`)
 | Rule | Scope | Description |
 | :--- | :--- | :--- |
-| [`anti-ai-slop`](rules/ui/1.%20anti-ai-slop.md) | UI / Design | Guidelines against gradient spam, faux SaaS clichés, and decorative filler |
+| [`ui-rules`](rules/ui/1.%20ui.md) | UI / Visual | Anti-AI slop visual design rules, solid colors, and anti-clichés |
+| [`ux-rules`](rules/ui/2.%20ux.md) | UX / Interaction | Anti-AI slop interaction design, state resilience, and accessibility |
 | `git-conventions` | Git | Commit message formats and branching rules |
 | `clean-code-principles` | Code Quality | Architecture boundaries and documentation standards |
 
